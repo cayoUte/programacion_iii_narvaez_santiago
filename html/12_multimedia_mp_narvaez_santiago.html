@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Veterinaria</title>
+    <style>
+        iframe {
+            border: 2px solid #333;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multimedia Veterinaria</h1>
+
+    <h2>Reproducir Video</h2>
+    <video width="1000" height="500" controls>
+        <source src="videos/consulta_veterinaria.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+
+    <h2>Reproducir Sonido</h2>
+    <audio controls muted>
+        <source src="music/sonido_relajante_mascotas.mp3" type="audio/mpeg">
+        Actualiza tu navegador, no soporta HTML5.
+    </audio>
+
+    <h1>Portal Veterinario</h1>
+
+    <h2>Información sobre Cuidados Animales</h2>
+    <iframe
+        src="https://es.wikipedia.org/wiki/Veterinaria"
+        width="800"
+        height="400"
+        title="Información Veterinaria">
+    </iframe>
+
+    <h2>Formulario de Registro de Citas</h2>
+    <iframe
+        src="registro_citas.html"
+        width="800"
+        height="700"
+        title="Formulario de registro de citas">
+    </iframe>
+</body>
+</html>

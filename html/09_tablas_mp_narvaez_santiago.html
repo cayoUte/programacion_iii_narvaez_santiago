@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas en HTML 5</title>
+  </head>
+  <body>
+    <h1>Tablas en HTML 5</h1>
+    <table
+      id="tabla-servicios"
+      alt="Tabla de servicios veterinarios"
+      border=""
+    >
+      <caption>
+        Clínica Veterinaria - Servicios y Precios
+      </caption>
+      <tr>
+        <th colspan="3">Servicios Disponibles</th>
+      </tr>
+      <tr>
+        <th>Servicio</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <td>Consulta general</td>
+        <td rowspan="2">Atención básica</td>
+        <td>25€</td>
+      </tr>
+      <tr>
+        <td>Vacunación</td>
+        <!-- <td>Protección preventiva</td> -->
+        <td>35€</td>
+      </tr>
+      <tr>
+        <td>Esterilización</td>
+        <td>Cirugía</td>
+        <td>150€</td>
+      </tr>
+    </table>
+    <br />
+    <table id="horarios" alt="Tabla de horarios de atención" border="1">
+      <caption>
+        Horarios de Atención
+      </caption>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Horario</th>
+          <th>Servicio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes a Viernes</td>
+          <td>9:00 - 20:00</td>
+          <td>Consultas y cirugías</td>
+        </tr>
+        <tr>
+          <td>Sábados</td>
+          <td>10:00 - 14:00</td>
+          <td>Consultas generales</td>
+        </tr>
+        <tr>
+          <td>Domingos</td>
+          <td>Urgencias 24h</td>
+          <td>Solo emergencias</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Horario sujeto a cambios en festivos</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

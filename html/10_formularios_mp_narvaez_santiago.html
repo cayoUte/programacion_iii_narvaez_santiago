@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <form action="/registro" method="post">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. María">
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <label for="edad">Edad</label>
+                    <br>
+                    <input type="number" id="edad" name="edad" min="1">
+                </td>
+                <td>
+                    <label for="apellido">Apellido</label>
+                    <br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ej. García">
+                    <br>
+                    <label for="confirmar">Confirmar Password</label>
+                    <br>
+                    <input type="password" id="confirmar" name="confirmar">
+                    <br>
+                    <label for="nivel">Nivel de Urgencia</label>
+                    <br>
+                    <input type="number" id="nivel" name="nivel" min="1" max="10" value="5" step="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Seleccione el tipo de mascota:</p>
+                    <input type="radio" id="perro" name="mascota" value="perro">
+                    <label for="perro">Perro</label>
+                    <input type="radio" id="gato" name="mascota" value="gato">
+                    <label for="gato">Gato</label>
+                </td>
+                <td>
+                    <p>Seleccione los servicios requeridos:</p>
+                    <br>
+                    <input type="checkbox" id="vacuna" name="servicios" value="vacuna">
+                    <label for="vacuna">Vacunación</label>
+                    <br>
+                    <input type="checkbox" id="esterilizacion" name="servicios" value="esterilizacion">
+                    <label for="esterilizacion">Esterilización</label>
+                    <br>
+                    <input type="checkbox" id="consulta" name="servicios" value="consulta">
+                    <label for="consulta">Consulta General</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="raza">Raza de la Mascota</label>
+                    <br>
+                    <select id="raza" name="raza">
+                        <option value="">Selecciona una Raza</option>
+                        <option value="labrador">Labrador</option>
+                        <option value="bulldog">Bulldog</option>
+                        <option value="persa">Persa</option>
+                        <option value="siames">Siamés</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="especialidad">Especialidad Veterinaria</label>
+                    <br>
+                    <select id="especialidad" name="especialidad" size="2">
+                        <option value="">Selecciona Especialidad</option>
+                        <option value="cirugia">Cirugía</option>
+                        <option value="dermatologia">Dermatología</option>
+                        <option value="cardiologia">Cardiología</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos de la Mascota</legend>
+                        <label for="visitas">Visitas Anteriores</label>
+                        <br>
+                        <input type="number" id="visitas" name="visitas" min="0">
+                        <br>
+                        <label for="peso">Peso (kg)</label>
+                        <br>
+                        <input type="number" id="peso" name="peso" min="0" step="0.1">
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>
