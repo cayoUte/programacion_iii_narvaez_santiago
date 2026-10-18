@@ -1,0 +1,14 @@
+h3 {
+    color: #e67e22;
+}
+
+a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1e8449;
+    text-decoration: underline;
+}
