@@ -1,0 +1,254 @@
+/* ==========================================================================
+   1. ESTILOS NORMALIZADOS
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  line-height: 1.15;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   2. VARIABLES GLOBALES
+   ========================================================================== */
+
+:root {
+  --primary: #22382e;
+  --primary-dark: #16261e;
+  --accent: #b8d8b0;
+  --surface: rgba(20, 30, 25, 0.92);
+  --text-muted: #8fa098;
+  --border-soft: #e0e9e2;
+  --radius: 14px;
+}
+
+/* ==========================================================================
+   3. LAYOUT GLOBAL
+   ========================================================================== */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f5f5;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1920")
+    center / cover fixed no-repeat;
+  line-height: 1.7;
+}
+
+main {
+  width: min(1200px, 100%);
+  margin: 40px auto;
+  padding: 0 24px;
+  flex: 1;
+}
+
+/* ==========================================================================
+   4. HEADER Y NAVEGACIÓN
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--primary);
+}
+
+.navbar {
+  width: min(1200px, 100%);
+  min-height: 70px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand,
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   5. TARJETAS BASE
+   ========================================================================== */
+
+.card {
+  padding: 28px;
+  border-radius: 12px;
+  background: var(--surface);
+  line-height: 1.8;
+}
+
+.card h1,
+.card h2 {
+  margin-bottom: 16px;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+
+.site-footer {
+  padding: 24px;
+  text-align: center;
+  background: var(--primary);
+  color: #d4ddd6;
+}
+
+.site-footer p + p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE GLOBAL
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  main {
+    margin: 24px auto;
+    padding: 0 14px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+}
