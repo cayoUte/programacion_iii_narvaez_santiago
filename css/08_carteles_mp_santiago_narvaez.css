@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #eef7f1;
+    color: #2c3e50;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    color: #2e8b57;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+main {
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+.cartel {
+    padding: 35px;
+    margin-bottom: 35px;
+    border: 3px solid;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.cartel h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.cartel h3 {
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.frase {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.firma {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.jedi {
+    background-color: #ffffff;
+    border-color: #2e8b57;
+}
+
+.jedi h2 {
+    color: #2e8b57;
+    text-shadow: 2px 2px 5px #a8d5ba;
+}
+
+.imperio {
+    background-color: #fdf3e7;
+    border-color: #e67e22;
+}
+
+.imperio h2 {
+    color: #d35400;
+    text-shadow: 2px 2px 5px #f5b041;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e8b57;
+    color: #ffffff;
+}

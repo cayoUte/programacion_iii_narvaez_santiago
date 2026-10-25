@@ -1,0 +1,72 @@
+.secreta{
+  visibility: hidden;
+}
+
+.caja {
+    position: static;
+    background-color: #bebcbc;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.especial{
+    position:relative;
+    color: white;
+    top: 15px;
+    left: 30px;
+    background-color: #2e8b57;
+}
+.especial {
+    position:relative;
+    top: 15px;
+    left: 30px;
+    background-color: #2e8b57;
+}
+.tarjeta-relativa{
+    position: relative;
+    top: 0;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid;
+    background-color: #1f3d2b;
+    color: #fff;
+}
+
+.etiqueta{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    background-color: #e67e22;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.boton-fijo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    color: #000;
+    border-radius: 8px;
+    background-color: #2e8b57;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav{    
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px;
+    background-color: #3a7d5c;
+}
+nav a{
+    text-decoration: none;
+    color: #fefefe;
+    margin-right: 20px;
+}
+section{
+    min-height: 450px;
+    padding: 30px;
+    border-bottom: 1px solid #a8d5ba;
+}

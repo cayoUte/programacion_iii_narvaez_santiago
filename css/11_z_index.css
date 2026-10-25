@@ -1,0 +1,32 @@
+.escenario{
+    position:relative;
+    height: 280px;
+    background-color: #000;
+}
+
+.caja{
+    position:absolute;
+    width: 150px;
+    height: 110px;
+    padding: 20px;
+    color: white;
+    
+}
+.azul{
+    top:20px;
+    left: 20px;
+    background-color: blue;
+    z-index: 1;
+}
+.verde{
+    top:60px;
+    left: 80px;
+    background-color: green;
+    z-index: 2;
+}
+.roja{
+    top:100px;
+    left: 140px;
+    background-color: red;
+    z-index: 3;
+}

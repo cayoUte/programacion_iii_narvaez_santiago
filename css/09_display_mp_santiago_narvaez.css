@@ -1,0 +1,18 @@
+.display{
+    display: none;
+    padding:20px;
+    margin-bottom:10px;
+    color:white;
+}
+.bg-1{
+    background-color: #2e8b57;
+    
+}
+.bg-2{
+    background-color: #3a7d5c;
+    
+}
+.bg-3{
+    background-color: #e67e22;
+    
+}
