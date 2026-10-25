@@ -1,0 +1,85 @@
+body{
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #eef7f1;
+    color: #2c3e50;
+}
+.contenedor1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #a8d5ba;
+    padding: 20px;    
+
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    background-color: #a8d5ba;
+    padding: 20px;    
+
+}
+.contenedor3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #a8d5ba;
+    padding: 20px;    
+
+}
+.contenedor4 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    background-color: #a8d5ba;
+    padding: 20px;    
+
+}
+.escuadrones1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d4e9dc;
+    padding: 20px;
+}
+.escuadrones2{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #d4e9dc;
+    padding: 20px;
+}
+.escuadrones3{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #d4e9dc;
+    padding: 20px;
+}
+.escuadrones4{
+    display: flex;
+    justify-content: center;
+    background-color: #d4e9dc;
+    padding: 20px;
+}
+.escuadrones5{
+    display: flex;
+    justify-content: space-around;
+    background-color: #d4e9dc;
+    padding: 20px;
+}
+.escuadrones6{
+    display: flex;
+    justify-content: end;
+    background-color: #d4e9dc;
+    padding: 20px;
+}
+.escuadron{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #2e8b57;
+}
+.personaje{
+    background-color: #2e8b57;
+    padding: 20px;
+    border: 2px solid #1f3d2b;
+    color: #ffffff;
+}
