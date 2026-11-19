@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript | Clínica Huellitas</title>
+    <script>
+        alert('Bienvenido a la Clínica Veterinaria Huellitas');
+        console.log('Página de la clínica cargada');
+    </script>
+</head>
+<body>
+    <h1>JavaScript en la Clínica Veterinaria Huellitas</h1>
+
+    <h2>JavaScript inline</h2>
+    <button onclick="alert('Gracias por cuidar de tu mascota')">
+        Mostrar mensaje
+    </button>
+
+    <h2>Eventos en campos de texto</h2>
+    <label for="mascota">Nombre de la mascota:</label>
+    <input id="mascota" type="text"
+        oninput="console.log('Nombre escrito:', this.value)"
+        placeholder="Escribe el nombre">
+
+    <label for="telefono">Teléfono de contacto:</label>
+    <input id="telefono" type="tel"
+        onchange="console.log('Teléfono guardado:', this.value)"
+        placeholder="Escribe tu teléfono">
+
+    <label for="consulta">Motivo de consulta:</label>
+    <input id="consulta" type="text"
+        onfocus="console.log('Escribiendo el motivo de consulta')"
+        onblur="console.log('Terminaste de editar el motivo')"
+        placeholder="Describe brevemente el motivo">
+
+    <script src="01_incluir_mp_santiago_narvaez.js"></script>
+</body>
+</html>
