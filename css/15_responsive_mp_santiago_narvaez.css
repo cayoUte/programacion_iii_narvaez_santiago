@@ -1,9 +1,11 @@
 body{
     margin: 0;
     font-family: Verdana, Helvetica, sans-serif;
+    color: #26352d;
 }
 
 .portada{
+    box-sizing: border-box;
     width: 100%;
     padding: 5vw;
     background-color: #1f3d2b;
@@ -11,39 +13,57 @@ body{
 }
 
 .portada h1{
-    font-size: 4vw;
+    margin-top: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     color: #a8d5ba;
 }
 
 .portada p{
-    font-size: 2vw;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     color: #a8d5ba;
 }
 
 .bienvenida{
-    min-height: 10vh;
+    min-height: 25vh;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: #2e8b57;
 }
 
 .historia{
-    width: 80%;
+    box-sizing: border-box;
+    width: min(80%, 900px);
+    margin: 0 auto 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    font-size: 15px;
-}
-
-h1{
-    font: 2.6rem;
+    background-color: #eef7f1;
+    text-align: center;
 }
 
 .historia p {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .portada {
+        padding: 32px 20px;
+    }
+
+    .bienvenida {
+        min-height: 20vh;
+        padding: 20px;
+    }
+
+    .historia {
+        width: calc(100% - 32px);
+        padding: 20px;
+    }
 }

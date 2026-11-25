@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes | Clínica Veterinaria Huellitas</title>
+    <link rel="stylesheet" href="06_crud_arreglo_mp_santiago_narvaez.css">
+    <script src="06_crud_arreglo_mp_santiago_narvaez.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Registro de pacientes veterinarios</h1>
+        <section class="panel">
+            <h2 id="tituloFormulario">Registrar paciente</h2>
+            <form id="formulario">
+                <label for="nombre">Nombre de la mascota</label>
+                <input id="nombre" type="text" required>
+
+                <label for="especie">Especie</label>
+                <select id="especie">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Conejo">Conejo</option>
+                    <option value="Tortuga">Tortuga</option>
+                </select>
+
+                <label for="estado">Estado de atención</label>
+                <select id="estado">
+                    <option value="En espera">En espera</option>
+                    <option value="En atención">En atención</option>
+                    <option value="Alta">Alta</option>
+                </select>
+
+                <div class="acciones-formulario">
+                    <button type="submit" id="guardar">Agregar paciente</button>
+                    <button type="button" id="cancelar" hidden>Cancelar edición</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Pacientes registrados</h2>
+            <p id="cantidad" aria-live="polite"></p>
+            <div id="contenedor" class="tarjetas"></div>
+        </section>
+    </main>
+</body>
+</html>
