@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background-color: #eef7f1;
+    color: #26352d;
+    font-family: Verdana, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header,
+footer {
+    padding: 20px;
+    background-color: #1f3d2b;
+    color: #ffffff;
+}
+
+header h1 {
+    color: #a8d5ba;
+}
+
+main {
+    width: min(100%, 850px);
+    margin: 24px auto;
+}
+
+.ejemplo {
+    margin: 20px 0;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #a8d5ba;
+    border-radius: 12px;
+}
+
+.ejemplo h2 {
+    color: #2e8b57;
+}
+
+/* Transición de color al interactuar */
+.boton-cita {
+    padding: 14px 24px;
+    background-color: #2e8b57;
+    color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.boton-cita:hover,
+.boton-cita:focus-visible {
+    background-color: #1f3d2b;
+    transform: translateY(-3px);
+}
+
+.boton-cita:focus-visible {
+    outline: 3px solid #a8d5ba;
+    outline-offset: 4px;
+}
+
+/* Transición de color y escala */
+.tarjeta {
+    width: min(100%, 280px);
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d4e9dc;
+    border: 2px solid #2e8b57;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.tarjeta:hover {
+    background-color: #a8d5ba;
+    transform: scale(1.05);
+}
+
+.icono {
+    font-size: 2.5rem;
+}
+
+/* Diferentes transformaciones y tiempos */
+.consultorio,
+.camino {
+    overflow: hidden;
+    padding: 18px;
+    background-color: #26352d;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.mascota-movil {
+    width: fit-content;
+    padding: 10px;
+    background-color: #d4e9dc;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    transition: transform 0.6s ease-out;
+}
+
+.mascota-movil:hover {
+    transform: translate(60px, -5px);
+}
+
+.indicador {
+    display: grid;
+    place-items: center;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    border: 3px solid #2e8b57;
+    border-radius: 50%;
+    color: #2e8b57;
+    font-size: 3rem;
+    transition: transform 1s ease-in-out;
+}
+
+.indicador:hover {
+    transform: rotate(180deg);
+}
+
+.ambulancia {
+    width: fit-content;
+    font-size: 2rem;
+    animation: traslado 3s ease-in-out infinite alternate;
+}
+
+@keyframes traslado {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(min(60vw, 500px));
+    }
+}
+
+/* Animación de opacidad en tres ciclos */
+.recordatorio {
+    width: min(100%, 360px);
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #2e8b57;
+    color: #ffffff;
+    border-radius: 8px;
+    animation: aviso 2s ease-in-out 3;
+}
+
+@keyframes aviso {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.35;
+    }
+}
+
+footer {
+    margin-top: 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
